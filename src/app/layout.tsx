@@ -1,10 +1,7 @@
-// Import necessary modules
-import React from "react";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 
-// Define local fonts
 export const RightGrotesk = localFont({
   src: "./fonts/RightGrotesk-CompactBlack.otf",
   display: "swap",
@@ -23,14 +20,16 @@ export const MessinaSansMono = localFont({
   variable: "--font-MessinaSansMono",
 });
 
-// Define metadata
 export const metadata: Metadata = {
   title: "Ape NFT",
   description: "Ape NFT",
 };
 
-// Define layout component
-const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
@@ -39,7 +38,4 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <body>{children}</body>
     </html>
   );
-};
-
-// Export layout component
-export default RootLayout;
+}
