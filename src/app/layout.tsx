@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 export const RightGrotesk = localFont({
-  src: "./fonts/RightGrotesk-CompactBlack.otf",
+  src: "./fonts/RightGrotesk-CompactBlack..woff2",
   display: "swap",
   variable: "--font-RightGrotesk",
 });
