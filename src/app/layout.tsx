@@ -1,24 +1,27 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
+// import localFont from "next/font/local";
 import "./globals.css";
-import localFont from "next/font/local";
+import { RightGroteskFont } from "./fonts";
+import { BiroScriptPlusFont } from "./fonts";
+import { MessinaSansMonoFont } from "./fonts";
 
-export const RightGrotesk = localFont({
-  src: "./fonts/RightGrotesk-CompactBlack..woff2",
-  display: "swap",
-  variable: "--font-RightGrotesk",
-});
+// export const RightGroteskFont = localFont({
+//   src: "./RightGrotesk-CompactBlack.woff2",
+//   display: "swap",
+//   variable: "--font-RightGrotesk",
+// });
 
-export const BiroScriptPlus = localFont({
-  src: "./fonts/BiroScriptUSPlus-Bold.woff2",
-  display: "swap",
-  variable: "--font-BiroScriptPlus",
-});
+// export const BiroScriptPlusFont = localFont({
+//   src: "./BiroScriptUSPlus-Bold.woff2",
+//   display: "swap",
+//   variable: "--font-BiroScriptPlus",
+// });
 
-export const MessinaSansMono = localFont({
-  src: "./fonts/MessinaSansMono-Regular.woff2",
-  display: "swap",
-  variable: "--font-MessinaSansMono",
-});
+// export const MessinaSansMonoFont = localFont({
+//   src: "./MessinaSansMono-Regular.woff2",
+//   display: "swap",
+//   variable: "--font-MessinaSansMono",
+// });
 
 export const metadata: Metadata = {
   title: "Ape NFT",
@@ -27,13 +30,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={`${RightGrotesk.variable} ${BiroScriptPlus.variable} ${MessinaSansMono.variable}`}
+      className={`${RightGroteskFont.variable} ${BiroScriptPlusFont.variable} ${MessinaSansMonoFont.variable}`}
     >
       <body>{children}</body>
     </html>
