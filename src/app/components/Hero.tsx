@@ -27,7 +27,7 @@ export const Hero: React.FC<{ text: HeroText }> = ({ text }) => {
   }, []);
 
   return (
-    <div className="w-full h-[542px] md:h-[421px] xl:h-[677px] bg-[var(--block-bg)] rounded-[12px] relative">
+    <div className="w-full h-[542px]  md:h-[421px] xl:h-[677px] bg-[var(--block-bg)] rounded-[12px] relative">
       <Image
         src="/logo.svg"
         alt="Логотип"

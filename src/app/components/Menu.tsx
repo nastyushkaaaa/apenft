@@ -1,7 +1,6 @@
 import Discord from "../../../public/discord.svg";
 import Ship from "../../../public/ship.svg";
 import Twitter from "../../../public/x.svg";
-import Image from "next/image";
 
 export const Menu = () => {
   return (
