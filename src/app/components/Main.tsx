@@ -10,7 +10,7 @@ type MainText = {
 
 export const Main: React.FC<{ text: MainText }> = ({ text }) => {
   return (
-    <div className="px-[64px] pt-[60px] md:px-[88px] xl:px-[204px] md:pt-[80px] xl:pt-[120px] md:pb-[0px] md:w-full md:flex md:flex-row md:flex-wrap md:justify-between md:relative md:basis-1/2">
+    <div className="px-[64px] pt-[60px] md:px-[88px] xl:px-[204px] md:pt-[80px] xl:pt-[120px] md:pb-[0px] md:w-full md:flex md:flex-row md:flex-wrap md:justify-between relative md:basis-1/2">
       <h1 className="uppercase text-[40px] text-white leading-[40px] block w-[216px] md:w-[269px] xl:w-[538px] md:text-[60px] md:leading-[60px] md:basis-1/2 xl:text-[120px] xl:leading-[120px]">
         {text.mainTitle}
         <span className="main-span text-[var(--block-bg)] text-[40px] ml-[4px] whitespace-break-spaces md:text-[60px] md:leading-[60px] md:whitespace-normal xl:text-[120px] xl:leading-[120px]">

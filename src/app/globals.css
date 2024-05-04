@@ -84,6 +84,15 @@ span {
   }
 }
 
+.strip-text {
+  font-family: var(--font-RightGrotesk);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: white;
+}
+
 @media screen and (min-width: 1280px) {
   .main-logo {
     width: 72px;
@@ -118,6 +127,11 @@ span {
   .icon {
     width: 24px;
     height: 24px;
+  }
+
+  .strip-text {
+    font-size: 64px;
+    line-height: 64px;
   }
 }
 
